@@ -4,7 +4,7 @@
 
 Welcome to my web development learning repository! 🚀  
 
-This repository contains all the projects and experiments I have created while learning **HTML, CSS, and JavaScript**. From simple webpages to interactive components, this is most of my progress in front-end development.  
+This repository contains all the projects and experiments I have created while learning **HTML, CSS, and JavaScript**. From simple webpages to interactive components, this is most of my progress in front-end development (I'm always learning, so there will be updates).  
 
 ### 🔹 What You’ll Find Here:  
 - Basic and advanced HTML structures  
