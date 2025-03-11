@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PhotoShow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d7ebf4;
+            color: #2c2b2b; 
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em; 
+            color: #014996; 
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+            text-transform: uppercase; 
+        }
+
+        .photo-album {
+            max-width: 800px; 
+            margin: 0 auto;
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 20px; 
+        }
+        .photo-item {
+            background-color: #fff; 
+            border-radius: 15px; 
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; 
+            opacity: 0.7; 
+        }
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 5px solid #0056b3; 
+        }
+        .photo-item.highlight {
+            transform: scale(1.05); 
+            box-shadow: 0 0 20px rgba(0, 100, 206, 0.6); 
+            border: 2px solid rgba(0, 100, 206, 0.6);
+            opacity: 1;
+        }
+
+        .caption {
+            padding: 15px;
+            font-size: 1.2em; 
+            text-align: center;
+            background-color: #fff; 
+            color: #555;
+            font-style: italic; 
+        }
+        .caption strong {
+            color: #0056b3;
+            font-weight: bold;
+        }
+
+      
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; 
+            }
+
+            .caption {
+                font-size: 1em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Photos</h1>
+
+    <div class="photo-album">
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136085.jpg?size=626&ext=jpg" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136127.jpg?size=626&ext=jpg" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/ansiedade-induzida-pela-floresta-escura_23-2150981903.jpg?size=626&ext=jpg" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136116.jpg?size=626&ext=jpg" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136121.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136113.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-premium/uma-floresta-escura-com-uma-luz-brilhando-atraves-dela_869640-233657.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/paisagem-enevoada-com-uma-floresta-coberta-de-nevoa-sob-nuvens-de-tempestade_181624-25465.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/foto-em-escala-de-cinza-de-uma-sala-de-tunel-escuro-com-uma-janela_181624-20284.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136158.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/antigo-fundo-preto-textura-grunge-papel-de-parede-escuro-lousa-lousa-concreto_1258-72145.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/estrada-vazia-em-atmosfera-escura_23-2150914436.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/antigo-fundo-preto-textura-grunge-papel-de-parede-escuro-lousa-lousa-concreto_1258-72084.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136103.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136139.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/portal-para-o-ceu_181624-9905.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/uma-velha-parede-preta-com-uma-superficie-rica-em-textura_157027-4329.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/tunel-torcido-escuro-abstrato-construido-em-forma-de-estrela_1217-2603.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        <div class="photo-item">
+            <img src="https://img.freepik.com/fotos-gratis/cena-de-fantasia-escura_23-2151136095.jpg?size=626&ext=jpg&ga=GA1.1.1099810025.1728064300&semt=ais_hybrid" alt="">
+            <div class="caption"><strong>Description</strong></div>
+        </div>
+        
+    </div>
+
+    <script>
+        const photoItems = document.querySelectorAll('.photo-item');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add('highlight');
+                } else {
+
+                    entry.target.classList.remove('highlight');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+
+        photoItems.forEach(item => {
+            observer.observe(item);
+        });
+    </script>
+
+    <footer><p>I have no image copyrights</p></footer>
+</body>
+</html>
